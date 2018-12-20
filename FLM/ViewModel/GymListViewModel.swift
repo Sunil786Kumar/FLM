@@ -21,7 +21,7 @@ class GymListViewModel {
     
     var presenter: PresenterProtocol?
     
-    init(service: GymServiceProtocol, present: PresenterProtocol) {
+    init(service: GymServiceProtocol, present: PresenterProtocol?) {
         gymService = service
         presenter = present
     }
