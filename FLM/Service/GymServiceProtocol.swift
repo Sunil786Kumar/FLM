@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol GymServiceProtocol {
+    
+    func fetchGyms(location: CLLocationCoordinate2D, completion:@escaping ([Gym]?) -> ())
+    
 }

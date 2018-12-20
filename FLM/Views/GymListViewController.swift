@@ -7,36 +7,36 @@
 //
 
 import UIKit
+import CoreLocation
 
 class GymListViewController: UITableViewController {
 
+    var viewModel: GymListViewModel!
+    
+    let service = GymService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Nearest Gyms"
+        viewModel = GymListViewModel(service: service, present: self)
         findUserLocation()
     }
-
+    
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return viewModel.numberOfGyms()
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GymListCell", for: indexPath) as? GymListTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        if let model = viewModel.gymAtRow(indexPath.row) {
+            cell.configure(model: model)
+        }
         return cell
     }
-    */
+    
 
     //MARK: - Private methods
     func findUserLocation() {
@@ -45,10 +45,20 @@ class GymListViewController: UITableViewController {
                 return
             }
             print(location)
-            //self.fetchGyms(location: location)
+            self.fetchGyms(location: location)
             }, failure: {
                 //alert to let user know, location not found
         })
     }
+    
+    func fetchGyms(location: CLLocationCoordinate2D) {
+        viewModel.fetchGyms(location: location)
+    }
+}
 
+extension GymListViewController: PresenterProtocol {
+    
+    func displayGyms() {
+        tableView.reloadData()
+    }
 }
