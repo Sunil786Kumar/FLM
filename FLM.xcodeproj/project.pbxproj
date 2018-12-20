@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		44166CC621CB2577009CDB80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44166CC521CB2577009CDB80 /* AppDelegate.swift */; };
-		44166CC821CB2577009CDB80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44166CC721CB2577009CDB80 /* ViewController.swift */; };
 		44166CCB21CB2577009CDB80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44166CC921CB2577009CDB80 /* Main.storyboard */; };
 		44166CCD21CB2579009CDB80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44166CCC21CB2579009CDB80 /* Assets.xcassets */; };
 		44166CD021CB2579009CDB80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44166CCE21CB2579009CDB80 /* LaunchScreen.storyboard */; };
 		44166CDB21CB2579009CDB80 /* FLMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44166CDA21CB2579009CDB80 /* FLMTests.swift */; };
+		44166CE621CB2622009CDB80 /* GymListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44166CE521CB2622009CDB80 /* GymListViewController.swift */; };
+		44166CE921CB2691009CDB80 /* GymListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44166CE821CB2691009CDB80 /* GymListTableViewCell.swift */; };
+		4A348F09445EE834D05EECD0 /* Pods_FLM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA22B2CB05F6F22957E3368 /* Pods_FLM.framework */; };
+		F1A77FA2CE87D38F9116B597 /* Pods_FLMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB6DEA850CBDE214F56A322 /* Pods_FLMTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		263968EE191B4648CAE606D7 /* Pods-FLMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLMTests/Pods-FLMTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DB6DEA850CBDE214F56A322 /* Pods_FLMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44166CC221CB2577009CDB80 /* FLM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44166CC521CB2577009CDB80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44166CC721CB2577009CDB80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44166CCA21CB2577009CDB80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44166CCC21CB2579009CDB80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44166CCF21CB2579009CDB80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,12 @@
 		44166CD621CB2579009CDB80 /* FLMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44166CDA21CB2579009CDB80 /* FLMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLMTests.swift; sourceTree = "<group>"; };
 		44166CDC21CB2579009CDB80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44166CE521CB2622009CDB80 /* GymListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymListViewController.swift; sourceTree = "<group>"; };
+		44166CE821CB2691009CDB80 /* GymListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymListTableViewCell.swift; sourceTree = "<group>"; };
+		4CA22B2CB05F6F22957E3368 /* Pods_FLM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		939E20AF84A3D859F3045B79 /* Pods-FLMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLMTests/Pods-FLMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2C6B80632149DFC35517443 /* Pods-FLM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLM.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLM/Pods-FLM.release.xcconfig"; sourceTree = "<group>"; };
+		A5AE9F58809B63BB42E2DBF5 /* Pods-FLM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLM/Pods-FLM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A348F09445EE834D05EECD0 /* Pods_FLM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A77FA2CE87D38F9116B597 /* Pods_FLMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +74,8 @@
 				44166CC421CB2577009CDB80 /* FLM */,
 				44166CD921CB2579009CDB80 /* FLMTests */,
 				44166CC321CB2577009CDB80 /* Products */,
+				6ADAFA013BA8514442C938B0 /* Pods */,
+				726032D1F6577BB15B1C8155 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +91,8 @@
 		44166CC421CB2577009CDB80 /* FLM */ = {
 			isa = PBXGroup;
 			children = (
+				44166CE721CB2668009CDB80 /* Views */,
 				44166CC521CB2577009CDB80 /* AppDelegate.swift */,
-				44166CC721CB2577009CDB80 /* ViewController.swift */,
 				44166CC921CB2577009CDB80 /* Main.storyboard */,
 				44166CCC21CB2579009CDB80 /* Assets.xcassets */,
 				44166CCE21CB2579009CDB80 /* LaunchScreen.storyboard */,
@@ -96,6 +110,35 @@
 			path = FLMTests;
 			sourceTree = "<group>";
 		};
+		44166CE721CB2668009CDB80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44166CE521CB2622009CDB80 /* GymListViewController.swift */,
+				44166CE821CB2691009CDB80 /* GymListTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6ADAFA013BA8514442C938B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE9F58809B63BB42E2DBF5 /* Pods-FLM.debug.xcconfig */,
+				A2C6B80632149DFC35517443 /* Pods-FLM.release.xcconfig */,
+				939E20AF84A3D859F3045B79 /* Pods-FLMTests.debug.xcconfig */,
+				263968EE191B4648CAE606D7 /* Pods-FLMTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		726032D1F6577BB15B1C8155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CA22B2CB05F6F22957E3368 /* Pods_FLM.framework */,
+				3DB6DEA850CBDE214F56A322 /* Pods_FLMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44166CDF21CB2579009CDB80 /* Build configuration list for PBXNativeTarget "FLM" */;
 			buildPhases = (
+				02B176529809DF1F05C630AE /* [CP] Check Pods Manifest.lock */,
 				44166CBE21CB2577009CDB80 /* Sources */,
 				44166CBF21CB2577009CDB80 /* Frameworks */,
 				44166CC021CB2577009CDB80 /* Resources */,
+				B263D8FB57AEFAE7FA5D7618 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44166CE221CB2579009CDB80 /* Build configuration list for PBXNativeTarget "FLMTests" */;
 			buildPhases = (
+				9D809706D911C58905DA068A /* [CP] Check Pods Manifest.lock */,
 				44166CD221CB2579009CDB80 /* Sources */,
 				44166CD321CB2579009CDB80 /* Frameworks */,
 				44166CD421CB2579009CDB80 /* Resources */,
+				5BD112191778A329BF67F945 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,12 +239,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02B176529809DF1F05C630AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD112191778A329BF67F945 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FLMTests/Pods-FLMTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLMTests/Pods-FLMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D809706D911C58905DA068A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B263D8FB57AEFAE7FA5D7618 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FLM/Pods-FLM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLM/Pods-FLM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44166CBE21CB2577009CDB80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44166CC821CB2577009CDB80 /* ViewController.swift in Sources */,
+				44166CE621CB2622009CDB80 /* GymListViewController.swift in Sources */,
+				44166CE921CB2691009CDB80 /* GymListTableViewCell.swift in Sources */,
 				44166CC621CB2577009CDB80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +485,7 @@
 		};
 		44166CE021CB2579009CDB80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5AE9F58809B63BB42E2DBF5 /* Pods-FLM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +503,7 @@
 		};
 		44166CE121CB2579009CDB80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C6B80632149DFC35517443 /* Pods-FLM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +521,7 @@
 		};
 		44166CE321CB2579009CDB80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 939E20AF84A3D859F3045B79 /* Pods-FLMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +542,7 @@
 		};
 		44166CE421CB2579009CDB80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 263968EE191B4648CAE606D7 /* Pods-FLMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
